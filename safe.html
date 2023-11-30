@@ -1,0 +1,189 @@
+<!-- 宣告HTML5文件 -->
+<!doctype html>
+<!-- 根元素 -->
+<html lang="zh-Hant-TW">
+  <!-- 檔頭 -->
+  <head>
+    <!-- 中繼標籤 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="海豚之旅">
+    <!-- 網頁內容摘要descript描述 ,Google最看重,SERP摘要文字，文字不可以超過255字,超過無效-->
+    <!-- 修改1  -->
+    <meta name="description" content="站內推薦花蓮美食情報,黑金通,冰浪花丸,花蓮邊境 ">
+    <meta name="generator" content="Visual Studio v.1.83.1">
+    <!-- 網頁內容的關鍵字(Google SERP) /Googiebot檢索 -->
+    <!-- 修改2 -->
+    <meta name="keywords" content="花蓮美食情報,黑金通,冰浪花丸,花蓮邊境">
+    <!--增加1 favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- 網站標題 修改3-->
+    <title>海豚之旅-旅遊安全</title>
+    <!-- Ｂootstrapcss -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="custom.css">
+<!-- CDN嫁接1 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- 增加2GA追蹤分析 -->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXS4YPKHTP"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-JXS4YPKHTP');
+    </script>
+  </head>
+  <!-- 網頁本文 -->
+  <body>
+    <!-- 可選擇是否要加入固定導覽列class="fixed-top -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">海豚之旅</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="about.html">旅遊情報</a>
+              </li>
+              <li class="nav-item">
+             <!-- 修改4 -->
+                <a class="nav-link" href="viewpoint.html">玩樂景點</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="safe.html">美食情報</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hotel.html">住宿資訊</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://toolkit.url.com.tw/bbs/index.php?email=bbs@trial-153957.url.tw" target="_blank">留言發問</a>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- 加入單一橫列，三個景點圖文資料 -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 加入三張輪播圖 -->
+            <img src="imges/4safe/aok.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imges/4safe/bok.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imges/4safe/cok.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+
+        <!-- 刪除不要的內容加入左圖右文一個行列兩個分欄打.row>(.col-md7.order-md-1.mt-5+.col-md5.order-md-0.mt-5)產生 -->
+        <div class="row">
+            <div class="col-md-7 order-md-1 mt-5">
+                <!-- 產生右文Emmet:h2+p.textlndent+(p.text-end>a) -->
+                
+                <h2><i class="material-icons" style="font-size:1.7rem;color:red;vertical-align: bottom;">bug_report</i>黑金通</h2>
+                <p class="textlndent">
+                     黑金通 最美百年老洋房文創複合食堂 @ 美味好吃划算套餐,聚餐好地方<br> 
+                     花蓮黑金通 Black Road 矗立在東大門夜市旁，白色系百年洋房建築相當顯眼，黑金通結合了花蓮在地文創特色商品＋餐廳的複合式經營，提供了便宜划算的套餐，像是很多人推薦必吃的剝皮辣椒三杯雞、各式小火鍋，如果晚上過來用餐完後，還能去東大門夜市逛逛走走。<br>
+                     位於東大門夜市斜對面的黑金通，是棟百年的洋房建築，在日治時期更是被稱為最美的房子。聳立於花蓮舊火車站旁，金三角櫥窗更是見證了花蓮的繁華榮景。至於為什麼叫黑金通是因為，在日治時期的街道都以通為此命名，而因為中山路就在花蓮舊火車站前，更是市區的主要道路，因此老早就鋪上了柏油路，而這些柏油路放眼望去就跟黑金色一樣，因此命名為黑金通，但也有一說是因為鄰近周遭的夜生活豐富，居民賺的是入夜錢。現在的黑金通一樓主要經營成小形的選物店，販售一些文青類的商品：二樓則是經營成複合式餐飲，販售米食套餐、早午餐、鍋物為主。</p>
+
+                <p class="text-end"><a href="https://black-road.business.site/" target="_blank" class="btn btn-success" role="button">黑金通</a></p>
+            </div>
+            <div class="col-md-5 order-md-0 mt-5">
+                <img src="imges/4safe/3ok.webp" class="img-fluid mx-auto" alt="黑金通" title="黑金通" aria-label="黑金通" >
+            </div>
+
+
+                
+        </div>
+
+        <!-- 複製上面的貼上  -->
+
+        <div class="row">
+          <div class="col-md-7 order-md-1 mt-5">              
+              <h2><i class="material-icons" style="font-size:1.7rem;color:red;vertical-align: bottom;">bug_report</i>冰浪花丸</h2>
+              <p class="textlndent">
+                花蓮超夯打卡景點~浪花丸かき氷•島食<br> 
+                走著日系質感的冰品，小店以日本沖繩琉球風的佈景設計，相當有活力，裡面有著超可愛超療癒的彩虹冰品，特色造型的小熊剉冰，上桌立馬療癒你的心，剉冰不僅可愛好拍，味美香甜，好食又可口，原以為花蓮這樣的小店，應該也是拍照打卡的店，沒想到冰品竟出乎我意料的還不錯，如果有來花蓮旅行，一定要來這兒吃冰，清涼一下呀！ <br>除了造型小熊冰，也有紅豆湯可以選擇唷 。
+              </p>
+
+              <p class="text-end"><a href="https://supertaste.tvbs.com.tw/infocard/19902" target="_blank" class="btn btn-success" role="button">冰浪花丸</a></p>
+          </div>
+          <div class="col-md-5 order-md-0 mt-5">
+              <img src="imges/4safe/2ok.webp" class="img-fluid mx-auto" alt="冰浪花丸" title="冰浪花丸" aria-label="冰浪花丸" >
+          </div>
+
+
+              
+      </div>
+
+      <div class="row">
+        <div class="col-md-7 order-md-1 mt-5">              
+            <h2><i class="material-icons" style="font-size:1.7rem;color:red;vertical-align: bottom;">bug_report</i>花蓮邊境</h2>
+            <p class="textlndent">
+              想在花蓮找間好吃的法式甜點店，花蓮超人氣甜點:邊境法式點心坊<br> 
+              甜點宛如藝術品，充滿詩意，神等級好吃又好看的甜點，花蓮咖啡廳，花蓮下午茶這間必收口袋名單<br>邊境法式點心坊陳立於2012年，老闆從法國ENSP甜點學校畢業後，回到家鄉花蓮創立了邊境法式點心，一個必須跨越重山，越過海洋，才能到達的土地。在法國學得的手藝，將法式甜點原汁原味的帶回花蓮，跟愛好甜點的朋友們分享這些美味。<br>
+              如何造訪邊境法式點心坊?可google導航「邊境法式點心坊」即可抵達。開車來訪，店對面有付費停車場。邊境法式點心坊位於花蓮縣花蓮市明智街上，在一整排住宅中，不是很搶眼，低調的門面，大片黑色落地窗，低調中發著光，每到營業時間，滿滿人潮，我們這天來朝聖，等了一小時多才吃到，絕對值得。<br>
+              人氣最夯法式甜點！一口銷魂的焦糖閃電泡芙！必點!
+            </p>
+
+            <p class="text-end"><a href="https://m.ccat.com.tw/823?openExternalBrowser=1" target="_blank" class="btn btn-success" role="button">花蓮邊境</a></p>
+        </div>
+        <div class="col-md-5 order-md-0 mt-5">
+            <img src="imges/4safe/4ok.webp" class="img-fluid mx-auto" alt="花蓮邊境" title="花蓮邊境" aria-label="花蓮邊境" >
+        </div>
+
+
+            
+    </div>
+
+
+
+      <hr>
+  
+        <!-- 修改4刪除不要的 -->
+        </div>
+        <!-- 加入頁尾打footer.container>p*2 -->
+        <footer class="container">
+          <!-- 如果要加回到頁面頂端的連結按鈕要加這串<p class="float-end"><a href="#top">回到頁面頂端</a></p> -->
+         
+           <center><p>海豚之旅 &copy; 2023</p></center>
+          
+        </footer>
+    </main>
+
+    <!-- BootstrapJS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>

@@ -1,0 +1,33 @@
+/* 導覽列背景色 */
+:root,
+[data-bs-theme=light]{
+--bs-dark-rgb:217, 179, 0;    
+}
+
+/* 使用GoogleFonts雲端字體 (連結網路字體*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+/* 使用GoogleFonts雲端字體 (套用網路字體 */
+body {font-family: '微軟正黑體' , 'Noto Sans TC', sans-serif;}
+
+
+/*指定根的文字大小，單位是px */
+html {font-size: 20px;}
+
+/* 選取器是標籤，影響整體 */
+h2 {font-size: 1.5rem;font-weight: 900;color: rgb(70, 117, 0);}
+
+/* 選取器識類別，影響個別，需手動套用 */
+.h2-custom-pink{font-size: 3rem;font-weight: 900;color: rgb(255, 0, 195);}
+
+/* 拿掉文字超連結下底線 */
+footer a {
+    text-decoration: none;
+}
+
+/* 如果文字第一行(首行)要縮排可以加入Emmet
+<div class="b"><p>你好你好你好你好你好你好你好你好好你好你好你好你好你好你好你好你好你好你好你好你好你好你好.</p></div> */
+
+div.b {
+    text-indent: 2rem;
+  }

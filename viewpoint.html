@@ -1,0 +1,265 @@
+<!-- 宣告HTML5文件 -->
+<!doctype html>
+<!-- 根元素 -->
+<html lang="zh-Hant-TW">
+  <!-- 檔頭 -->
+  <head>
+    <!-- 中繼標籤 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="海豚之旅">
+    <!-- 網頁內容摘要descript描述 ,Google最看重,SERP摘要文字，文字不可以超過255字,超過無效-->
+    <!-- 修改1  -->
+    <meta name="description" content="推薦花蓮的特色,包含自然景觀,人文探索,美食之旅,戶外活動 ">
+    <meta name="generator" content="Visual Studio v.1.83.1">
+    <!-- 網頁內容的關鍵字(Google SERP) /Googiebot檢索 -->
+    <!-- 修改2 -->
+    <meta name="keywords" content="花蓮，吉安，豐濱，壽豐，星巴克，翡翠谷，Mr.sam 山姆先生，新社梯田，白楊步道，菲律賓板塊，親不知子海上古道">
+    <!--增加1 favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+    <!-- 網站標題 修改3-->
+    <title>海豚之旅-景點介紹</title>
+    <!-- Ｂootstrapcss -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="custom.css">
+    <!-- 增加2GA追蹤分析 -->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXS4YPKHTP"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-JXS4YPKHTP');
+    </script>
+  </head>
+  <!-- 網頁本文 -->
+  <body>
+    <!-- 可選擇是否要加入固定導覽列class="fixed-top -->
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">海豚之旅</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="about.html">旅遊情報</a>
+              </li>
+              <li class="nav-item">
+             <!-- 修改4 -->
+                <a class="nav-link active" aria-current="page" href="viewpoint.html">玩樂景點</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="safe.html">美食情報</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hotel.html">住宿資訊</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://toolkit.url.com.tw/bbs/index.php?email=bbs@trial-153957.url.tw" target="_blank">留言發問</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- 加入單一橫列，三個景點圖文資料 -->
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 加入三張輪播圖 -->
+            <img src="imges/index/新增資料夾/8ok.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imges/index/新增資料夾/7ok.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imges/index/新增資料夾/6ok.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <!-- role屬性可變更標籤h2語意，若不需要變更，可刪除 -->
+        <!-- 修改5 Bootstrap-找Alerts做分類標題複製貼上 -->
+        <h2 class="alert alert-success mt-5" role="alert">豐濱景點</h2>
+        <!-- 加入兩個行列.row>(.col-lg-6)*2 -->
+        <div class="row">
+          <!-- 加入.card>(img+.card-body)  -->
+          <div class="col-lg-6">
+            <div class="card">
+              <img src="imges/viewpoint/3.webp" class="card-img-top" alt="人臉岩" title="人臉岩" aria-label="人臉岩">
+              <!-- 加入段落><中間加入h4.card-title+(p.card-text)*2+p.text-end  -->
+              <div class="card-body">
+                <h4 class="card-title">豐濱人臉岩</h4>
+                <p class="card-text">人臉岩是位於台灣花蓮縣秀林鄉的一個自然地標，因其形狀酷似一張人臉而得名。</p>
+                <p class="card-text">位於太魯閣國家公園內，屬於秀林鄉境內。是台灣東部地區一個以峽谷、懸崖、山脈和溪流聞名的自然保護區。遠觀這塊巨大的岩石，宛如一張具有清晰輪廓的人臉，包括眼睛、鼻子和嘴巴，讓人不禁讚嘆大自然的神奇。其背後的歷史或傳說可能有當地居民口耳相傳的故事，可能涉及當地原住民的神話或傳統故事，這些故事為這個地標增添了神秘色彩。參訪人臉岩時可以同時欣賞到太魯閣國家公園內其他的自然美景，包括懸崖、深谷和壯麗的山脈，使得整個旅程更加豐富多彩
+                </p>
+                <p class="text-end"><a href="https://tw.news.yahoo.com/%E7%9D%A1%E7%BE%8E%E4%BA%BA%E5%B2%A9%E7%9F%B3%E5%81%B4%E8%87%89%E5%A5%87%E6%99%AF-%E9%8A%80%E6%B2%B3%E6%B5%B7%E7%A5%AD%E5%A0%B4%E7%A5%9E%E7%A7%98%E6%84%9F%E7%88%86%E6%A3%9A-042000275.html " class="btn btn-success" target="_blank"  role="button">人臉岩</a></p> 
+              </div>
+            </div>
+          </div>
+          <!-- 複製上面貼上 -->
+          <div class="col-lg-6">
+            <div class="card">
+              <img src="imges/viewpoint/6.webp" class="card-img-top" alt="新社梯田" title="新社梯田" aria-label="新社梯田">
+              <div class="card-body">
+                <h4 class="card-title">豐濱新社梯田</h4>
+                <p class="card-text">頗具盛名的「海梯田」，正是新社梯田，無論是插秧時、收耕前、休耕後，任何月份季節，都能感受到海梯田的萬種風情！收耕前是大多數人最喜歡的畫面，稻穗粒粒飽滿的在陽光下，隨著海風搖擺，走在田埂間，看向遠方的海岸山脈與太平洋，彷彿與畫面融為一體，捨不得離去。</p>
+                <p class="card-text">從宜蘭南遷的噶瑪蘭人，到花蓮豐濱鄉建造新聚落，因而村落名為新社，在噶瑪蘭語新社是「萬物養生之地」。在宜蘭習慣耕作的居民仍念念不忘稻米的滋味，於是在臨海台地上開闢梯田、種植稻米，成為現在稻田連接著海的特殊景象，又稱之為海稻米梯田。
+                </p>
+                <p class="text-end"><a href="https://tour-hualien.hl.gov.tw/TourContent.aspx?n=44&s=1274" class="btn btn-success" target="_blank"  role="button">新社梯田</a></p> 
+              </div>
+
+          </div>
+        </div>
+        <!-- 複製上面的一列兩欄貼上 -->
+        <div class="container">
+          <h2 class="alert alert-warning mt-5" role="alert">壽豐景點</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card">
+                <img src="imges/viewpoint/9.webp" class="card-img-top" alt="Mr.sam 山姆先生" title="Mr.sam 山姆先生" aria-label="Mr.sam 山姆先生">
+                <div class="card-body">
+                  <h4 class="card-title">Mr.sam 山姆先生</h4>
+                  <p class="card-text">花蓮最美童話屋 霍爾移動城堡</p>
+                  <p class="card-text">山姆先生咖啡館，是現在來花蓮必拍的熱門地標，免門票景點停車可折抵消費，山姆先生咖啡館像極了霍爾移動城堡的外觀拍照效果超好，很快就成為網美朝聖的花蓮IG景點，也很適合家庭親子旅遊來喝飲料吃冰。附近推薦可以安排翡翠谷、鯉魚潭、立川漁場、雲山水等順遊景點，就是好玩的花蓮一日遊囉！
+                  </p>
+                  <p class="text-end"><a href="https://www.facebook.com/mr.sam970/?locale=zh_TW " class="btn btn-warning" target="_blank"  role="button">Mr.sam 山姆先生</a></p> 
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card">
+                <img src="imges/viewpoint/7.webp" class="card-img-top" alt="親不知子天空步道" title="親不知子天空步道" aria-label="親不知子天空步道">
+                <div class="card-body">
+                  <h4 class="card-title">親不知子天空步道</h4>
+                  <p class="card-text">「親不知子海上古道」位於海岸山脈的懸崖峭壁上，過去新社部落與磯崎部落往來聯絡的古道，其中一段便需沿著這段峭壁前行。</p>
+                  <p class="card-text">相傳過去有一部落婦人，揹著孩子行經這段古道時，因木橋無繩索，只能依靠攀附峭壁生長的藤向前行走，婦人過度緊張，過了古道才發現孩子已經不見了。這則故事也說明過去交通不便，前人生活的艱辛不易。
+                  </div>
+                  </p>
+                  <p class="text-end"><a href="https://www.eastcoast-nsa.gov.tw/zh-tw/attractions/detail/267/" class="btn btn-warning" target="_blank"  role="button">親不知子天空步道</a></p> 
+                </div>
+  
+            </div>
+          </div>
+
+          <div class="container">
+            <h2 class="alert alert-primary mt-5" role="alert">吉安景點</h2>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card">
+                  <img src="imges/viewpoint/1.webp" class="card-img-top" alt="星巴克貨櫃" title="星巴克貨櫃" aria-label="星巴克貨櫃">
+                  <div class="card-body">
+                    <h4 class="card-title">星巴克貨櫃</h4>
+                    <p class="card-text">洄瀾門市是首間也是亞洲首間以「貨櫃」打造的貨櫃屋門市。</p>
+                    <p class="card-text">建築外觀由建築大師隈研吾設計，以曾駐足過紐約、巴爾的摩、馬賽、巴塞隆納等世界各大城市碼頭的 29 個貨櫃為主體堆疊打造出倒金字塔型的四層建築，賦予貨櫃新生命。
+                    </p>
+                    <p class="text-end"><a href="https://www.starbucks.com.tw/stores/special/stores_special_hualienbay.jspx " class="btn btn-info" target="_blank"  role="button">星巴克貨櫃</a></p> 
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-lg-6">
+                <div class="card">
+                  <img src="imges/viewpoint/2.webp" class="card-img-top" alt="菲律賓板塊" title="菲律賓板塊" aria-label="菲律賓板塊">
+                  <div class="card-body">
+                    <h4 class="card-title">菲律賓板塊</h4>
+                    <p class="card-text">菲律賓板塊是地球上的一個大型板塊，屬於地球的外圍板塊之一。它主要位於西太平洋地區，涵蓋了東南亞、菲律賓、關島、太平洋島國等地區。</p>
+                    <p class="card-text">以下是有關菲律賓板塊的一些基本資訊：<br>
+
+                      地理位置：菲律賓板塊是太平洋板塊的一部分，它覆蓋了包括菲律賓群島、印尼、馬來西亞、巴布亞紐幾內亞、所羅門群島、部分關島、太平洋島國等地區。<br>
+                      
+                      板塊邊界：菲律賓板塊與其他板塊形成了一些板塊邊界，其中最明顯的是與太平洋板塊的碰撞。在這些碰撞邊界上，板塊之間的地壓作用使得地殼發生變動，形成了地震、火山活動等地質現象。<br>
+                      
+                      地質活動：菲律賓板塊是一個地質活躍的區域，這裡發生了多個重要的板塊運動和地質事件。其中，馬尼拉海溝是一個著名的構造，標誌著菲律賓板塊與太平洋板塊的碰撞邊界。<br>
+                      
+                      火山和地震：由於與太平洋板塊的碰撞，菲律賓板塊上有眾多的火山和地震帶。許多地區經常發生地震，而一些火山也處於活躍狀態。<br>
+                      
+                      地形特徵：菲律賓板塊包含了豐富的地形特徵，從高山到沿海平原，再到小島和海洋。這種多樣性的地形形成了該區域豐富的生態系統。<br>
+                      
+                      總的來說，菲律賓板塊在地球板塊運動中扮演著重要的角色，與周圍的板塊相互作用，形成了這個地區多樣而豐富的地理和地質景觀。
+                    </p>
+                    <p class="text-end"><a href="https://www.businesstoday.com.tw/article/category/183031/post/202112280031/" class="btn btn-info" target="_blank"  role="button">菲律賓板塊</a></p> 
+                  </div>
+    
+              </div>
+            </div>
+
+            <div class="container">
+              <h2 class="alert alert-danger mt-5" role="alert">秀林景點</h2>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card">
+                    <img src="imges/viewpoint/11.webp" class="card-img-top" alt="白楊步道" title="白楊步道" aria-label="白楊步道">
+                    <div class="card-body">
+                      <h4 class="card-title">白楊步道</h4>
+                      <p class="card-text">花蓮白楊步道水濂洞瀑布，精采絕倫無敵驚嘆！太魯閣白楊步道停車場，離門口不遠有兩處，但仍容易客滿。
+                        白楊步道開放後，每天人都很多，想參觀白楊步道走多久？來回2個小時跑不到，而且需要注意的細節可不少。</p>
+                      <p class="card-text">白楊步道安全帽要戴上 (幾乎沒人理會)、手電筒必備 (隧道無照明)、雨衣必備 (感受洞頂水狂衝)，都很重要。
+                        另外裡面無廁所，還有白楊步道靈異事件也會分享，最後白楊瀑布雖然平穩好走，但不能帶寵物狗等來訪喔～
+                      </p>
+                      <p class="text-end"><a href="https://www.taroko.gov.tw/AttractionTrailContent.aspx?n=5701&sms=11275&s=39 " class="btn btn-danger" target="_blank"  role="button">白楊步道</a></p> 
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-lg-6">
+                  <div class="card">
+                    <img src="imges/viewpoint/8.webp" class="card-img-top" alt="花蓮翡翠谷" title="花蓮翡翠谷" aria-label="花蓮翡翠谷">
+                    <div class="card-body">
+                      <h4 class="card-title">花蓮翡翠谷</h4>
+                      <p class="card-text">在地人不想告訴你的消暑秘境，琉璃般清澈的瀑布傾瀉而下。</p>
+                      <p class="card-text">絕美水簾瀑布比慕谷慕魚更夢幻，夏日最美的消暑戲水勝地！
+                        繼慕谷慕魚之後花蓮又一個絕美消暑勝地－翡翠谷水簾瀑布，
+                        有如琉璃般清澈的瀑布傾瀉而下，形成在地人最愛的天然SPA～
+                      </p>
+                      <p class="text-end"><a href="https://www.businesstoday.com.tw/article/category/183031/post/202112280031/" class="btn btn-danger" target="_blank"  role="button">花蓮翡翠谷</a></p> 
+                    </div>
+      
+                </div>
+              </div>
+  
+  
+  
+        <hr>
+  
+        <!-- 修改4刪除不要的 -->
+        </div>
+        <!-- 加入頁尾打footer.container>p*2 -->
+        <footer class="container">
+          <p class="float-end"><a href="#top">回到頁面頂端</a></p>
+          <p>海豚之旅 &copy; 2023</p>
+        </footer>
+    </main>
+
+    <!-- BootstrapJS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
